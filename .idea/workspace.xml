@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e7c2fe7-974c-4b62-b24d-e00b82863ab3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/201906/GUI/gui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/201906/GUI/window.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkStation/Test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkStation/Time.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkStation/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/Algorithm0618.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/Algorithm0618.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/Inte0619.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/Inte0619.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/Invoke.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/Invoke.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/OO0619.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/OO0619.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/Science0619.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/Science0619.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/Var0618.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/Var0618.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/exception0618.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/exception0618.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/explot.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/explot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/file0618.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/file0618.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/func0618.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/func0618.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/list0618.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/list0618.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/pi0618.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/pi0618.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/random0618.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/random0618.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/scope0618.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/scope0618.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/201906/string0618.py" beforeDir="false" afterPath="$PROJECT_DIR$/201906/basic/string0618.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/201906/GUI/text.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,16 +16,49 @@
         <entry file="file://$PROJECT_DIR$/201906/GUI/gui.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" selection-end-column="99" />
+              <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="99" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/201906/GUI/window.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/201906/GUI/text.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" lean-forward="true" selection-end-line="68" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/201906/GUI/window.py">
+        <entry file="file://$PROJECT_DIR$/201906/basic/Science0619.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="66" lean-forward="true" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+            <state relative-caret-position="525">
+              <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/matplotlib/backends/backend_tkagg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,6 +110,7 @@
         <option value="$PROJECT_DIR$/WorkStation/Time.py" />
         <option value="$PROJECT_DIR$/201906/GUI/gui.py" />
         <option value="$PROJECT_DIR$/201906/GUI/window.py" />
+        <option value="$PROJECT_DIR$/201906/GUI/text.py" />
       </list>
     </option>
   </component>
@@ -127,6 +139,12 @@
               <item name="pythonLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="pythonLearn" type="462c0819:PsiDirectoryNode" />
               <item name="201906" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="201906" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pythonLearn" type="b2602c69:ProjectViewProjectNode" />
@@ -164,7 +182,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.window">
+  <component name="RunManager" selected="Python.text">
     <configuration name="Test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythonLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -231,7 +249,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="text" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythonLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -239,12 +257,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/201906" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/201906/GUI" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\Documents\GitHub\pythonLearn\201906\basic\plot.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/201906/GUI/text.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -277,11 +295,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.text" />
         <item itemvalue="Python.window" />
         <item itemvalue="Python.gui" />
         <item itemvalue="Python.Test (1)" />
         <item itemvalue="Python.Time" />
-        <item itemvalue="Python.plot" />
       </list>
     </recent_temporary>
   </component>
@@ -296,23 +314,23 @@
       <option name="presentableId" value="Default" />
       <updated>1548229509350</updated>
       <workItem from="1560819120443" duration="17425000" />
-      <workItem from="1561083514052" duration="2446000" />
+      <workItem from="1561083514052" duration="4873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19871000" />
+    <option name="totallyTimeSpent" value="22298000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14142092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14142092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.3753541" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.14872521" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -348,6 +366,7 @@
     <SUITE FILE_PATH="coverage/pythonLearn$file0618.coverage" NAME="file0618 Coverage Results" MODIFIED="1560824824043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906" />
     <SUITE FILE_PATH="coverage/pythonLearn$window.coverage" NAME="window Coverage Results" MODIFIED="1561094135458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906/GUI" />
     <SUITE FILE_PATH="coverage/pythonLearn$OO0619.coverage" NAME="OO0619 Coverage Results" MODIFIED="1560911165560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906" />
+    <SUITE FILE_PATH="coverage/pythonLearn$text.coverage" NAME="text Coverage Results" MODIFIED="1561096121472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906/GUI" />
     <SUITE FILE_PATH="coverage/pythonLearn$pi0618.coverage" NAME="pi0618 Coverage Results" MODIFIED="1560863028884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906" />
     <SUITE FILE_PATH="coverage/pythonLearn$plot.coverage" NAME="plot Coverage Results" MODIFIED="1560915072588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906" />
     <SUITE FILE_PATH="coverage/pythonLearn$Time.coverage" NAME="Time Coverage Results" MODIFIED="1560917470219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WorkStation" />
@@ -498,13 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/201906/basic/Science0619.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/201906/basic/Test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -575,17 +587,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/matplotlib/backends/backend_tkagg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/201906/GUI/gui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" selection-end-column="99" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="99" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/201906/GUI/window.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="10" column="66" lean-forward="true" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/201906/GUI/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-end-line="68" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/201906/basic/Science0619.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
         </state>
       </provider>
     </entry>
