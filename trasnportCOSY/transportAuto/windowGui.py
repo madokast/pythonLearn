@@ -16,10 +16,15 @@ mpl.rcParams['axes.unicode_minus'] = False  # 负号显示
 
 class GUI:
     def __init__(self):
+        self.envelope = None
         self.root = tk.Tk()  # 创建主窗体
-        # self.canvas = tk.Canvas()  # 创建一块显示图形的画布
-        # self.figure = self.create_matplotlib()  # 返回matplotlib所画图形的figure对象
-        # self.create_form(self.figure)  # 将figure显示在tkinter窗体上面
+        self.root.protocol("WM_DELETE_WINDOW", lambda: exit(0))
+
+        self.f = plt.figure(num=2, figsize=(16, 12), dpi=60, facecolor="white", edgecolor='green',
+                            frameon=True)  # 创建绘图对象f
+        self.canvas = FigureCanvasTkAgg(self.f, self.root)
+        self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=1)
+        self.canvas._tkcanvas.pack(side=tk.TOP, fill=tk.BOTH, expand=1)
 
         self.frame = tk.Frame(self.root)
         self.frame.pack(fill=tk.X, side=tk.BOTTOM)
@@ -66,19 +71,33 @@ class GUI:
         tk.Entry(self.frame, textvariable=self.CD2nvar).grid(row=1, column=9, rowspan=2)
         tk.Entry(self.frame, textvariable=self.gapvar).grid(row=1, column=11, rowspan=2)
 
-        QG0add = lambda: self.QG0var.set(str(round(float(self.QG0var.get()) + float(self.stepVar.get()),5))) == None and transport.trans(QGO=float(self.QG0var.get()),QG1=float(self.QG1var.get()),CD1ang=float(self.CD1angvar.get()),CD1n=float(self.CD1nvar.get()),CD2n=float(self.CD2nvar.get()),gap=float(self.gapvar.get())) == None
-        QG1add = lambda: self.QG1var.set(str(round(float(self.QG1var.get()) + float(self.stepVar.get()),5))) == None and transport.trans(QGO=float(self.QG0var.get()),QG1=float(self.QG1var.get()),CD1ang=float(self.CD1angvar.get()),CD1n=float(self.CD1nvar.get()),CD2n=float(self.CD2nvar.get()),gap=float(self.gapvar.get())) == None
-        CD1angadd = lambda: self.CD1angvar.set(str(round(float(self.CD1angvar.get()) + float(self.stepVar.get()),5))) == None and transport.trans(QGO=float(self.QG0var.get()),QG1=float(self.QG1var.get()),CD1ang=float(self.CD1angvar.get()),CD1n=float(self.CD1nvar.get()),CD2n=float(self.CD2nvar.get()),gap=float(self.gapvar.get())) == None
-        CD1nadd = lambda: self.CD1nvar.set(str(round(float(self.CD1nvar.get()) + float(self.stepVar.get()),5))) == None and transport.trans(QGO=float(self.QG0var.get()),QG1=float(self.QG1var.get()),CD1ang=float(self.CD1angvar.get()),CD1n=float(self.CD1nvar.get()),CD2n=float(self.CD2nvar.get()),gap=float(self.gapvar.get())) == None
-        CD2nadd = lambda: self.CD2nvar.set(str(round(float(self.CD2nvar.get()) + float(self.stepVar.get()),5))) == None and transport.trans(QGO=float(self.QG0var.get()),QG1=float(self.QG1var.get()),CD1ang=float(self.CD1angvar.get()),CD1n=float(self.CD1nvar.get()),CD2n=float(self.CD2nvar.get()),gap=float(self.gapvar.get())) == None
-        gapadd = lambda: self.gapvar.set(str(round(float(self.gapvar.get()) + float(self.stepVar.get()),5))) == None and transport.trans(QGO=float(self.QG0var.get()),QG1=float(self.QG1var.get()),CD1ang=float(self.CD1angvar.get()),CD1n=float(self.CD1nvar.get()),CD2n=float(self.CD2nvar.get()),gap=float(self.gapvar.get())) == None
+        QG0add = lambda: self.QG0var.set(
+            str(round(float(self.QG0var.get()) + float(self.stepVar.get()), 5))) == None and self.updateDate() == None
+        QG1add = lambda: self.QG1var.set(
+            str(round(float(self.QG1var.get()) + float(self.stepVar.get()), 5))) == None and self.updateDate() == None
+        CD1angadd = lambda: self.CD1angvar.set(
+            str(round(float(self.CD1angvar.get()) + float(self.stepVar.get()),
+                      5))) == None and self.updateDate() == None
+        CD1nadd = lambda: self.CD1nvar.set(
+            str(round(float(self.CD1nvar.get()) + float(self.stepVar.get()), 5))) == None and self.updateDate() == None
+        CD2nadd = lambda: self.CD2nvar.set(
+            str(round(float(self.CD2nvar.get()) + float(self.stepVar.get()), 5))) == None and self.updateDate() == None
+        gapadd = lambda: self.gapvar.set(
+            str(round(float(self.gapvar.get()) + float(self.stepVar.get()), 5))) == None and self.updateDate() == None
 
-        QG0sub = lambda: self.QG0var.set(str(round(float(self.QG0var.get()) - float(self.stepVar.get()),5))) == None and transport.trans(QGO=float(self.QG0var.get()),QG1=float(self.QG1var.get()),CD1ang=float(self.CD1angvar.get()),CD1n=float(self.CD1nvar.get()),CD2n=float(self.CD2nvar.get()),gap=float(self.gapvar.get())) == None
-        QG1sub = lambda: self.QG1var.set(str(round(float(self.QG1var.get()) - float(self.stepVar.get()),5))) == None and transport.trans(QGO=float(self.QG0var.get()),QG1=float(self.QG1var.get()),CD1ang=float(self.CD1angvar.get()),CD1n=float(self.CD1nvar.get()),CD2n=float(self.CD2nvar.get()),gap=float(self.gapvar.get())) == None
-        CD1angsub = lambda: self.CD1angvar.set(str(round(float(self.CD1angvar.get()) - float(self.stepVar.get()),5))) == None and transport.trans(QGO=float(self.QG0var.get()),QG1=float(self.QG1var.get()),CD1ang=float(self.CD1angvar.get()),CD1n=float(self.CD1nvar.get()),CD2n=float(self.CD2nvar.get()),gap=float(self.gapvar.get())) == None
-        CD1nsub = lambda: self.CD1nvar.set(str(round(float(self.CD1nvar.get()) - float(self.stepVar.get()),5))) == None and transport.trans(QGO=float(self.QG0var.get()),QG1=float(self.QG1var.get()),CD1ang=float(self.CD1angvar.get()),CD1n=float(self.CD1nvar.get()),CD2n=float(self.CD2nvar.get()),gap=float(self.gapvar.get())) == None
-        CD2nsub = lambda: self.CD2nvar.set(str(round(float(self.CD2nvar.get()) - float(self.stepVar.get()),5))) == None and transport.trans(QGO=float(self.QG0var.get()),QG1=float(self.QG1var.get()),CD1ang=float(self.CD1angvar.get()),CD1n=float(self.CD1nvar.get()),CD2n=float(self.CD2nvar.get()),gap=float(self.gapvar.get())) == None
-        gapsub = lambda: self.gapvar.set(str(round(float(self.gapvar.get()) - float(self.stepVar.get()),5))) == None and transport.trans(QGO=float(self.QG0var.get()),QG1=float(self.QG1var.get()),CD1ang=float(self.CD1angvar.get()),CD1n=float(self.CD1nvar.get()),CD2n=float(self.CD2nvar.get()),gap=float(self.gapvar.get())) == None
+        QG0sub = lambda: self.QG0var.set(
+            str(round(float(self.QG0var.get()) - float(self.stepVar.get()), 5))) == None and self.updateDate() == None
+        QG1sub = lambda: self.QG1var.set(
+            str(round(float(self.QG1var.get()) - float(self.stepVar.get()), 5))) == None and self.updateDate() == None
+        CD1angsub = lambda: self.CD1angvar.set(
+            str(round(float(self.CD1angvar.get()) - float(self.stepVar.get()),
+                      5))) == None and self.updateDate() == None
+        CD1nsub = lambda: self.CD1nvar.set(
+            str(round(float(self.CD1nvar.get()) - float(self.stepVar.get()), 5))) == None and self.updateDate() == None
+        CD2nsub = lambda: self.CD2nvar.set(
+            str(round(float(self.CD2nvar.get()) - float(self.stepVar.get()), 5))) == None and self.updateDate() == None
+        gapsub = lambda: self.gapvar.set(
+            str(round(float(self.gapvar.get()) - float(self.stepVar.get()), 5))) == None and self.updateDate() == None
 
         tk.Button(self.frame, text='+', command=QG0add).grid(row=1, column=2)
         tk.Button(self.frame, text='+', command=QG1add).grid(row=1, column=4)
@@ -95,6 +114,38 @@ class GUI:
         tk.Button(self.frame, text='-', command=gapsub).grid(row=2, column=12)
 
         self.root.mainloop()
+
+    def updateDate(self):
+        self.envelope = transport.trans(QGO=float(self.QG0var.get()), QG1=float(self.QG1var.get()),
+                                        CD1ang=float(self.CD1angvar.get()),
+                                        CD1n=float(self.CD1nvar.get()), CD2n=float(self.CD2nvar.get()),
+                                        gap=float(self.gapvar.get()))
+        self.prepare()
+        self.canvas.draw()  # 以前的版本使用show()方法，matplotlib 2.2之后不再推荐show（）用draw代替，但是用show不会报错，会显示警告
+        self.root.update()
+
+    def prepare(self):
+        x = np.array(self.envelope[0])
+        y1 = np.array(self.envelope[1])
+        y2 = np.array(self.envelope[2])
+        y3 = np.array(self.envelope[3])
+
+        self.f.clf()
+        fig1 = plt.subplot(1, 1, 1)  # 创建一副子图
+
+        fig1.plot(x, y1, color='black', linewidth=2, linestyle='-')
+        fig1.plot(x, y2, color='black', linewidth=2, linestyle='-')
+        fig1.plot(x, y3, color='red', linewidth=2, linestyle='--')
+
+        # fig1.set_title("这是第一幅图", loc='center', pad=20, fontsize='xx-large', color='red')  # 设置标题
+        # line1.set_label("正弦曲线")  # 确定图例
+        # fig1.legend(['正弦', '余弦'], loc='upper left', facecolor='green', frameon=True, shadow=True, framealpha=0.5,
+        #             fontsize='xx-large')
+
+        fig1.set_xlabel('xy/mm')  # 确定坐标轴标题
+        fig1.set_ylabel('s/m')
+        # fig1.set_yticks([-1, -1 / 2, 0, 1 / 2, 1])  # 设置坐标轴刻度
+        # fig1.grid(which='major', axis='x', color='r', linestyle='-', linewidth=2)  # 设置网格
 
 
 gui = GUI()
