@@ -1,9 +1,15 @@
-def test():
-    print "it's a test"
+# def test():
+#     print("it's a test")
 
 
-print test()
+# test()
 
-# it's a test
-# None
+# # it's a test
+# # None
 
+
+def helloWorld():
+    print('hello')
+
+if __name__ == '_main__':
+    helloWorld()
