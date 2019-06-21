@@ -1,17 +1,37 @@
 import tkinter as tk
 
+step = 0.001
+varNumber = 0
 window = tk.Tk()
 window.title("TRANSPORT")
-window.geometry('800x600')
-QG0 = tk.Variable()
-QG0.set("-5.46165")
-entry = tk.Entry(window, textvariable=QG0)
-entry.pack()
+frameDown = tk.Frame(window)
+frameDown.pack(fill=tk.X, side=tk.BOTTOM)
 
-QGOget = lambda: QG0.set('{: .5f}'.format(float(QG0.get())+0.001))
-bottom = tk.Button(window,text="+",command=QGOget)
-bottom.pack()
 
-print(QG0.get())
+def addVar(name, val):
+    global step
+    global varNumber
+    global frameDown
+    varNumber += 1
+    var = tk.Variable()
+    var.set(str(val))
+    QG0Label = tk.Label(frameDown, text=name)
+    QG0Label.grid(row=0, column=varNumber * 2 - 1)
+    entryVar = tk.Entry(frameDown, textvariable=var)
+    entryVar.grid(row=1, column=varNumber * 2 - 1, rowspan=2)
+
+    varAdd = lambda: var.set('{: .5f}'.format(float(var.get()) + step))
+    varSub = lambda: var.set('{: .5f}'.format(float(var.get()) - step))
+
+    bottomVarAdd = tk.Button(frameDown, text="+", command=varAdd)
+    bottomVarAdd.grid(row=1, column=varNumber * 2)
+    bottomVarSub = tk.Button(frameDown, text="-", command=varSub)
+    bottomVarSub.grid(row=2, column=varNumber * 2)
+
+    return var
+
+stepLen = addVar("")
+
+
 
 window.mainloop()

@@ -1,9 +1,10 @@
 import math
 
-def script(QGO,QG1,CD1ang,CD1n,CD2n,gap):
-    #QG0 QG1 CD1ang
-    CD1len = CD1ang/180.0*math.pi
-    CD2len = (45.0-CD1ang*2.0)/180.0*math.pi
+
+def script(QGO, QG1, CD1ang, CD1n, CD2n, gap):
+    # QG0 QG1 CD1ang
+    CD1len = CD1ang / 180.0 * math.pi
+    CD2len = (45.0 - CD1ang * 2.0) / 180.0 * math.pi
     return ''''HUST SC Gantry DownStream'
 0
 15. 11.0 /MEV/ .001 ;
@@ -49,7 +50,6 @@ def script(QGO,QG1,CD1ang,CD1n,CD2n,gap):
 SENTINEL
 
 SENTINEL
-SENTINEL'''.format(vQGO=QGO,vQG1=QG1,vCD1len=CD1len,vCD2len=CD2len,vgap=gap,vCD1n=CD1n,vCD2n=CD2n)
-
+SENTINEL'''.format(vQGO=QGO, vQG1=QG1, vCD1len=CD1len, vCD2len=CD2len, vgap=gap, vCD1n=CD1n, vCD2n=CD2n)
 
 # print(script(2.,3.,15.0,0.3))
