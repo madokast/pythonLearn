@@ -129,13 +129,26 @@ class GUI:
         y1 = np.array(self.envelope[1])
         y2 = np.array(self.envelope[2])
         y3 = np.array(self.envelope[3])
+        typeList = self.envelope[4]
 
         self.f.clf()
         fig1 = plt.subplot(1, 1, 1)  # 创建一副子图
 
+        fig1.plot(np.array([0, np.max(x)]), np.array([0, 0]), color='gray', linewidth=2, linestyle='--')
         fig1.plot(x, y1, color='black', linewidth=2, linestyle='-')
         fig1.plot(x, y2, color='black', linewidth=2, linestyle='-')
         fig1.plot(x, y3, color='red', linewidth=2, linestyle='--')
+
+        for i in range(1, self.envelope[4].__len__()):
+            if typeList[i] == 'QUAD':
+                fig1.plot(x[i - 1:i + 1], np.array([30, 30]), color='blue', linewidth=2, linestyle='-')
+                fig1.plot(x[i - 1:i + 1], np.array([-30, -30]), color='blue', linewidth=2, linestyle='-')
+            elif typeList[i] == 'BEND':
+                fig1.plot(x[i - 1:i + 1], np.array([30, 30]), color='red', linewidth=2, linestyle='-')
+                fig1.plot(x[i - 1:i + 1], np.array([-30, -30]), color='red', linewidth=2, linestyle='-')
+
+        # fig1.plot(np.array([0, np.max(x)]), np.array([30, 30]), color='gray', linewidth=2, linestyle='--')
+        # fig1.plot(np.array([0, np.max(x)]), np.array([-30, -30]), color='gray', linewidth=2, linestyle='--')
 
         # fig1.set_title("这是第一幅图", loc='center', pad=20, fontsize='xx-large', color='red')  # 设置标题
         # line1.set_label("正弦曲线")  # 确定图例
@@ -144,8 +157,6 @@ class GUI:
 
         fig1.set_xlabel('xy/mm')  # 确定坐标轴标题
         fig1.set_ylabel('s/m')
-        # fig1.set_yticks([-1, -1 / 2, 0, 1 / 2, 1])  # 设置坐标轴刻度
-        # fig1.grid(which='major', axis='x', color='r', linestyle='-', linewidth=2)  # 设置网格
 
 
 gui = GUI()
