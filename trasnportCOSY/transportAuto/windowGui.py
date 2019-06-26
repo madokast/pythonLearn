@@ -18,6 +18,7 @@ class GUI:
     def __init__(self):
         self.envelope = None
         self.root = tk.Tk()  # 创建主窗体
+        self.root.title('transport')
         self.root.protocol("WM_DELETE_WINDOW", lambda: exit(0))
 
         self.f = plt.figure(num=2, figsize=(16, 12), dpi=60, facecolor="white", edgecolor='green',
@@ -36,12 +37,13 @@ class GUI:
         self.stepEntries = tk.Entry(self.frame, textvariable=self.stepVar)
         self.stepEntries.grid(row=1, column=0, rowspan=2)
 
-        self.QG0 = -4.37
-        self.QG1 = 5.39
-        self.CD1ang = 15.0
-        self.CD1n = 5.9
-        self.CD2n = -22.9
-        self.gap = 0.3
+        self.QG0 = -5.97
+        self.QG1 = 6.6
+        self.CD1ang = 8.2
+        self.CD1n = 25
+        self.CD2n = -25
+        self.gap = 0.24
+        self.Dlength = 0.51
 
         self.QG0var = tk.Variable()
         self.QG1var = tk.Variable()
@@ -49,6 +51,7 @@ class GUI:
         self.CD1nvar = tk.Variable()
         self.CD2nvar = tk.Variable()
         self.gapvar = tk.Variable()
+        self.Dlengthvar = tk.Variable()
 
         self.QG0var.set(str(self.QG0))
         self.QG1var.set(str(self.QG1))
@@ -56,6 +59,7 @@ class GUI:
         self.CD1nvar.set(str(self.CD1n))
         self.CD2nvar.set(str(self.CD2n))
         self.gapvar.set(str(self.gap))
+        self.Dlengthvar.set(str(self.Dlength))
 
         tk.Label(self.frame, text='QG0').grid(row=0, column=1)
         tk.Label(self.frame, text='QG1').grid(row=0, column=3)
@@ -63,6 +67,7 @@ class GUI:
         tk.Label(self.frame, text='CD1n').grid(row=0, column=7)
         tk.Label(self.frame, text='CD2n').grid(row=0, column=9)
         tk.Label(self.frame, text='gap').grid(row=0, column=11)
+        tk.Label(self.frame, text='Dlength').grid(row=0, column=13)
 
         tk.Entry(self.frame, textvariable=self.QG0var).grid(row=1, column=1, rowspan=2)
         tk.Entry(self.frame, textvariable=self.QG1var).grid(row=1, column=3, rowspan=2)
@@ -70,6 +75,7 @@ class GUI:
         tk.Entry(self.frame, textvariable=self.CD1nvar).grid(row=1, column=7, rowspan=2)
         tk.Entry(self.frame, textvariable=self.CD2nvar).grid(row=1, column=9, rowspan=2)
         tk.Entry(self.frame, textvariable=self.gapvar).grid(row=1, column=11, rowspan=2)
+        tk.Entry(self.frame, textvariable=self.Dlengthvar).grid(row=1, column=13, rowspan=2)
 
         QG0add = lambda: self.QG0var.set(
             str(round(float(self.QG0var.get()) + float(self.stepVar.get()), 5))) == None and self.updateDate() == None
@@ -84,6 +90,8 @@ class GUI:
             str(round(float(self.CD2nvar.get()) + float(self.stepVar.get()), 5))) == None and self.updateDate() == None
         gapadd = lambda: self.gapvar.set(
             str(round(float(self.gapvar.get()) + float(self.stepVar.get()), 5))) == None and self.updateDate() == None
+        Dlengthadd = lambda: self.Dlengthvar.set(
+            str(round(float(self.Dlengthvar.get()) + float(self.stepVar.get()), 5))) == None and self.updateDate() == None
 
         QG0sub = lambda: self.QG0var.set(
             str(round(float(self.QG0var.get()) - float(self.stepVar.get()), 5))) == None and self.updateDate() == None
@@ -98,6 +106,8 @@ class GUI:
             str(round(float(self.CD2nvar.get()) - float(self.stepVar.get()), 5))) == None and self.updateDate() == None
         gapsub = lambda: self.gapvar.set(
             str(round(float(self.gapvar.get()) - float(self.stepVar.get()), 5))) == None and self.updateDate() == None
+        Dlengthsub = lambda: self.Dlengthvar.set(
+            str(round(float(self.Dlengthvar.get()) - float(self.stepVar.get()), 5))) == None and self.updateDate() == None
 
         tk.Button(self.frame, text='+', command=QG0add).grid(row=1, column=2)
         tk.Button(self.frame, text='+', command=QG1add).grid(row=1, column=4)
@@ -105,6 +115,7 @@ class GUI:
         tk.Button(self.frame, text='+', command=CD1nadd).grid(row=1, column=8)
         tk.Button(self.frame, text='+', command=CD2nadd).grid(row=1, column=10)
         tk.Button(self.frame, text='+', command=gapadd).grid(row=1, column=12)
+        tk.Button(self.frame, text='+', command=Dlengthadd).grid(row=1, column=14)
 
         tk.Button(self.frame, text='-', command=QG0sub).grid(row=2, column=2)
         tk.Button(self.frame, text='-', command=QG1sub).grid(row=2, column=4)
@@ -112,6 +123,7 @@ class GUI:
         tk.Button(self.frame, text='-', command=CD1nsub).grid(row=2, column=8)
         tk.Button(self.frame, text='-', command=CD2nsub).grid(row=2, column=10)
         tk.Button(self.frame, text='-', command=gapsub).grid(row=2, column=12)
+        tk.Button(self.frame, text='-', command=Dlengthsub).grid(row=2, column=14)
 
         self.root.mainloop()
 
@@ -119,7 +131,7 @@ class GUI:
         self.envelope = transport.trans(QGO=float(self.QG0var.get()), QG1=float(self.QG1var.get()),
                                         CD1ang=float(self.CD1angvar.get()),
                                         CD1n=float(self.CD1nvar.get()), CD2n=float(self.CD2nvar.get()),
-                                        gap=float(self.gapvar.get()))
+                                        gap=float(self.gapvar.get()),Dlength=float(self.Dlengthvar.get()))
         self.prepare()
         self.canvas.draw()  # 以前的版本使用show()方法，matplotlib 2.2之后不再推荐show（）用draw代替，但是用show不会报错，会显示警告
         self.root.update()
@@ -129,13 +141,26 @@ class GUI:
         y1 = np.array(self.envelope[1])
         y2 = np.array(self.envelope[2])
         y3 = np.array(self.envelope[3])
+        typeList = self.envelope[4]
 
         self.f.clf()
         fig1 = plt.subplot(1, 1, 1)  # 创建一副子图
 
+        fig1.plot(np.array([0, np.max(x)]), np.array([0, 0]), color='gray', linewidth=2, linestyle='--')
         fig1.plot(x, y1, color='black', linewidth=2, linestyle='-')
         fig1.plot(x, y2, color='black', linewidth=2, linestyle='-')
         fig1.plot(x, y3, color='red', linewidth=2, linestyle='--')
+
+        for i in range(1, self.envelope[4].__len__()):
+            if typeList[i] == 'QUAD':
+                fig1.plot(x[i - 1:i + 1], np.array([30, 30]), color='blue', linewidth=2, linestyle='-')
+                fig1.plot(x[i - 1:i + 1], np.array([-30, -30]), color='blue', linewidth=2, linestyle='-')
+            elif typeList[i] == 'BEND':
+                fig1.plot(x[i - 1:i + 1], np.array([30, 30]), color='red', linewidth=2, linestyle='-')
+                fig1.plot(x[i - 1:i + 1], np.array([-30, -30]), color='red', linewidth=2, linestyle='-')
+
+        # fig1.plot(np.array([0, np.max(x)]), np.array([30, 30]), color='gray', linewidth=2, linestyle='--')
+        # fig1.plot(np.array([0, np.max(x)]), np.array([-30, -30]), color='gray', linewidth=2, linestyle='--')
 
         # fig1.set_title("这是第一幅图", loc='center', pad=20, fontsize='xx-large', color='red')  # 设置标题
         # line1.set_label("正弦曲线")  # 确定图例
@@ -144,8 +169,6 @@ class GUI:
 
         fig1.set_xlabel('xy/mm')  # 确定坐标轴标题
         fig1.set_ylabel('s/m')
-        # fig1.set_yticks([-1, -1 / 2, 0, 1 / 2, 1])  # 设置坐标轴刻度
-        # fig1.grid(which='major', axis='x', color='r', linestyle='-', linewidth=2)  # 设置网格
 
 
 gui = GUI()

@@ -4,7 +4,8 @@
     <list default="true" id="1e7c2fe7-974c-4b62-b24d-e00b82863ab3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/trasnportCOSY/transportAuto/FOR001.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/trasnportCOSY/transportAuto/FOR001.DAT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trasnportCOSY/transportAuto/FOR002.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/trasnportCOSY/transportAuto/FOR002.DAT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trasnportCOSY/transportAuto/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/trasnportCOSY/transportAuto/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trasnportCOSY/transportAuto/scriptT.py" beforeDir="false" afterPath="$PROJECT_DIR$/trasnportCOSY/transportAuto/scriptT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trasnportCOSY/transportAuto/transport.py" beforeDir="false" afterPath="$PROJECT_DIR$/trasnportCOSY/transportAuto/transport.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trasnportCOSY/transportAuto/windowGui.py" beforeDir="false" afterPath="$PROJECT_DIR$/trasnportCOSY/transportAuto/windowGui.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trasnportCOSY/transportAuto/windowGui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="125">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -28,31 +29,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/matplotlib/pyplot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5370">
-              <caret line="419" column="4" selection-start-line="419" selection-start-column="4" selection-end-line="419" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/matplotlib/backends/backend_tkagg.py">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/tkinter/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/201906/GUI/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <caret line="1985" column="4" selection-start-line="1985" selection-start-column="4" selection-end-line="1985" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -60,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trasnportCOSY/transportAuto/transport.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="400">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -72,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trasnportCOSY/transportAuto/scriptT.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+            <state relative-caret-position="225">
+              <caret line="24" selection-end-line="55" />
             </state>
           </provider>
         </entry>
@@ -81,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trasnportCOSY/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="277">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -135,18 +115,19 @@
         <option value="$PROJECT_DIR$/201906/GUI/gui.py" />
         <option value="$PROJECT_DIR$/201906/GUI/text.py" />
         <option value="$PROJECT_DIR$/trasnportCOSY/transportAuto/GUI.py" />
-        <option value="$PROJECT_DIR$/trasnportCOSY/transportAuto/scriptT.py" />
-        <option value="$PROJECT_DIR$/trasnportCOSY/test.py" />
         <option value="$PROJECT_DIR$/201906/GUI/windowGui.py" />
         <option value="$PROJECT_DIR$/201906/GUI/window.py" />
-        <option value="$PROJECT_DIR$/trasnportCOSY/transportAuto/transport.py" />
         <option value="$PROJECT_DIR$/201906/GUI/test.py" />
         <option value="$PROJECT_DIR$/trasnportCOSY/transportAuto/test.py" />
+        <option value="$PROJECT_DIR$/trasnportCOSY/test.py" />
+        <option value="$PROJECT_DIR$/trasnportCOSY/transportAuto/drawenvelope.py" />
+        <option value="$PROJECT_DIR$/trasnportCOSY/transportAuto/transport.py" />
+        <option value="$PROJECT_DIR$/trasnportCOSY/transportAuto/scriptT.py" />
         <option value="$PROJECT_DIR$/trasnportCOSY/transportAuto/windowGui.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="20" />
     <option name="y" value="40" />
     <option name="width" value="1880" />
@@ -334,10 +315,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.windowGui" />
+        <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test (2)" />
         <item itemvalue="Python.window" />
-        <item itemvalue="Python.test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -352,23 +333,23 @@
       <option name="presentableId" value="Default" />
       <updated>1548229509350</updated>
       <workItem from="1560819120443" duration="17425000" />
-      <workItem from="1561083514052" duration="18402000" />
+      <workItem from="1561083514052" duration="28968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35827000" />
+    <option name="totallyTimeSpent" value="46393000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09919571" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15482573" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.13314448" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.28895184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -392,10 +373,10 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonLearn$GUI.coverage" NAME="GUI Coverage Results" MODIFIED="1561099061641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trasnportCOSY/transportAuto" />
-    <SUITE FILE_PATH="coverage/pythonLearn$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1561101851559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trasnportCOSY" />
+    <SUITE FILE_PATH="coverage/pythonLearn$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1561339377606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trasnportCOSY" />
     <SUITE FILE_PATH="coverage/pythonLearn$Invoke.coverage" NAME="Invoke Coverage Results" MODIFIED="1560914085071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906" />
     <SUITE FILE_PATH="coverage/pythonLearn$Var0618.coverage" NAME="Var0618 Coverage Results" MODIFIED="1560820797669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906" />
-    <SUITE FILE_PATH="coverage/pythonLearn$windowGui.coverage" NAME="windowGui Coverage Results" MODIFIED="1561111003806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trasnportCOSY/transportAuto" />
+    <SUITE FILE_PATH="coverage/pythonLearn$windowGui.coverage" NAME="windowGui Coverage Results" MODIFIED="1561467641868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trasnportCOSY/transportAuto" />
     <SUITE FILE_PATH="coverage/pythonLearn$file0618.coverage" NAME="file0618 Coverage Results" MODIFIED="1560824824043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906" />
     <SUITE FILE_PATH="coverage/pythonLearn$window.coverage" NAME="window Coverage Results" MODIFIED="1561104164158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906/GUI" />
     <SUITE FILE_PATH="coverage/pythonLearn$OO0619.coverage" NAME="OO0619 Coverage Results" MODIFIED="1560911165560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906" />
@@ -610,13 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3312">
-          <caret line="2394" column="8" selection-start-line="2394" selection-start-column="8" selection-end-line="2394" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WorkStation/Test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -648,15 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trasnportCOSY/transportAuto/drawenvelope.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trasnportCOSY/transportAuto/GUI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -675,30 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trasnportCOSY/transportAuto/scriptT.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trasnportCOSY/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trasnportCOSY/transportAuto/transport.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -746,10 +687,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/trasnportCOSY/transportAuto/fileSkipLine.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trasnportCOSY/transportAuto/drawenvelope.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="86" selection-start-line="4" selection-start-column="86" selection-end-line="4" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trasnportCOSY/transportAuto/scriptT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trasnportCOSY/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trasnportCOSY/transportAuto/transport.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="1985" column="4" selection-start-line="1985" selection-start-column="4" selection-end-line="1985" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trasnportCOSY/transportAuto/windowGui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        <state relative-caret-position="125">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
