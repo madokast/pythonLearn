@@ -14,6 +14,7 @@ def trans(**kwargs):
     CD1n = kwargs['CD1n']
     CD2n = kwargs['CD2n']
     gap = kwargs['gap']
+    Dlength = kwargs['Dlength']
 
     # arrays hold envelope parameter
     sList = []  # distance
@@ -25,7 +26,7 @@ def trans(**kwargs):
     # write FOR001 file
     # def script(QGO,QG1,CD1ang,CD1n,CD2n,gap):
     FOR001 = open('./FOR001.DAT', 'w')
-    FOR001.write(scriptT.script(QGO, QG1, CD1ang, CD1n, CD2n, gap))
+    FOR001.write(scriptT.script(QGO, QG1, CD1ang, CD1n, CD2n, gap,Dlength))
     FOR001.flush()
     FOR001.close()
 

@@ -1,7 +1,7 @@
 import math
 
 
-def script(QGO, QG1, CD1ang, CD1n, CD2n, gap):
+def script(QGO, QG1, CD1ang, CD1n, CD2n, gap, Dlength):
     # QG0 QG1 CD1ang
     CD1len = CD1ang / 180.0 * math.pi
     CD2len = (45.0 - CD1ang * 2.0) / 180.0 * math.pi
@@ -17,11 +17,11 @@ def script(QGO, QG1, CD1ang, CD1n, CD2n, gap):
 13 6;
 
 3. 0.01 /CP/;
-3. 1.3 ;
+3. 1.0 ;
 5. 0.27 {vQGO} 30. /QG0/ ;
-3. 0.35 ;
+3. 0.30 ;
 5. 0.27 {vQG1} 30. /QG1/ ;
-3. 0.7 ;
+3. {vDlength} ;
 
 16. 5. 30;
 16. 7. 0.0;
@@ -50,6 +50,6 @@ def script(QGO, QG1, CD1ang, CD1n, CD2n, gap):
 SENTINEL
 
 SENTINEL
-SENTINEL'''.format(vQGO=QGO, vQG1=QG1, vCD1len=CD1len, vCD2len=CD2len, vgap=gap, vCD1n=CD1n, vCD2n=CD2n)
+SENTINEL'''.format(vQGO=QGO, vQG1=QG1, vCD1len=CD1len, vCD2len=CD2len, vgap=gap, vCD1n=CD1n, vCD2n=CD2n , vDlength = Dlength)
 
 # print(script(2.,3.,15.0,0.3))
