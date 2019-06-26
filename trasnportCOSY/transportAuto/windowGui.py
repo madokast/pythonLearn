@@ -167,8 +167,11 @@ class GUI:
         # fig1.legend(['正弦', '余弦'], loc='upper left', facecolor='green', frameon=True, shadow=True, framealpha=0.5,
         #             fontsize='xx-large')
 
-        fig1.set_xlabel('xy/mm')  # 确定坐标轴标题
-        fig1.set_ylabel('s/m')
+        font = {'family':'Times New Roman','weight':'normal','size':30}
+
+
+        fig1.set_xlabel('s/mm',font)  # 确定坐标轴标题
+        fig1.set_ylabel('xy/mm',font)
 
 
 gui = GUI()
