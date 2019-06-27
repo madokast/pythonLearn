@@ -20,15 +20,15 @@ class GUI:
         self.root = tk.Tk()  # 创建主窗体
         self.root.title('transport')
         self.root.protocol("WM_DELETE_WINDOW", lambda: exit(0))
+        self.frame = tk.Frame(self.root)
+        self.frame.pack(fill=tk.X, side=tk.BOTTOM, expand=1)
 
         self.f = plt.figure(num=2, figsize=(16, 12), dpi=60, facecolor="white", edgecolor='green',
                             frameon=True)  # 创建绘图对象f
         self.canvas = FigureCanvasTkAgg(self.f, self.root)
-        self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=1)
-        self.canvas._tkcanvas.pack(side=tk.TOP, fill=tk.BOTH, expand=1)
+        self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.X, expand=1)
+        self.canvas._tkcanvas.pack(side=tk.TOP, fill=tk.X, expand=1)
 
-        self.frame = tk.Frame(self.root)
-        self.frame.pack(fill=tk.X, side=tk.BOTTOM)
 
         self.stepVar = tk.Variable()
         self.stepVar.set(str(0.01))
@@ -37,13 +37,13 @@ class GUI:
         self.stepEntries = tk.Entry(self.frame, textvariable=self.stepVar)
         self.stepEntries.grid(row=1, column=0, rowspan=2)
 
-        self.QG0 = -5.97
-        self.QG1 = 6.6
-        self.CD1ang = 8.2
-        self.CD1n = 25
-        self.CD2n = -25
-        self.gap = 0.24
-        self.Dlength = 0.51
+        self.QG0 = -4.3737
+        self.QG1 = 5.398396
+        self.CD1ang = 15.0
+        self.CD1n = 5.9
+        self.CD2n = -22.9
+        self.gap = 0.30
+        self.Dlength = 0.70
 
         self.QG0var = tk.Variable()
         self.QG1var = tk.Variable()
@@ -125,6 +125,7 @@ class GUI:
         tk.Button(self.frame, text='-', command=gapsub).grid(row=2, column=12)
         tk.Button(self.frame, text='-', command=Dlengthsub).grid(row=2, column=14)
 
+        self.updateDate()
         self.root.mainloop()
 
     def updateDate(self):
