@@ -1,7 +1,15 @@
 import time
 
+"""
+计时器
+"""
+
 
 def currentTimeMillis():
+    """
+    和 Java 方法 System.currentTimeMillis() 一样
+    :return: 自1970年某时开始的毫秒数
+    """
     return int(time.time() * 1000.0)
 
 
@@ -24,14 +32,20 @@ class Timer:
             print("运行时间{: 0.3f}s".format(cls.__time))
 
     @classmethod
-    def sleep(cls,t):
-        time.sleep(t/1000.0)
+    def sleep(cls, t):
+        time.sleep(t / 1000.0)
 
     @classmethod
     def help(cls):
         print("调用invoke()开始计时，再次调用返回时长")
         print("调用sleep(t)线程休息t/ms")
 
+    @classmethod
+    def text(cls):
+        print("进行200ms测试")
+        cls.invoke()
+        cls.sleep(200)
+        cls.invoke()
 
 # 使用示例
 # Timer.invoke()
