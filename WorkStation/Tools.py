@@ -1,9 +1,5 @@
 import time
 
-"""
-计时器
-"""
-
 
 def currentTimeMillis():
     """
@@ -41,13 +37,9 @@ class Timer:
         print("调用sleep(t)线程休息t/ms")
 
     @classmethod
-    def text(cls):
+    def test(cls):
         print("进行200ms测试")
         cls.invoke()
         cls.sleep(200)
         cls.invoke()
 
-# 使用示例
-# Timer.invoke()
-# Timer.sleep(200)
-# Timer.invoke()
