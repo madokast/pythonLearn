@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e7c2fe7-974c-4b62-b24d-e00b82863ab3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WorkStation/Test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkStation/CCT.py" beforeDir="false" afterPath="$PROJECT_DIR$/WorkStation/CCT.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WorkStation/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/WorkStation/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WorkStation/Time.py" beforeDir="false" afterPath="$PROJECT_DIR$/WorkStation/Tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkStation/Test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/WorkStation/Test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkStation/doc/AGCCT.docx" beforeDir="false" afterPath="$PROJECT_DIR$/WorkStation/doc/AGCCT.docx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WorkStation/Test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" selection-start-line="6" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="126">
+              <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -32,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/WorkStation/Test2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
-              <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -40,11 +38,33 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WorkStation/CCT.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+            <state relative-caret-position="306">
+              <caret line="318" column="37" selection-start-line="318" selection-start-column="37" selection-end-line="318" selection-end-column="37" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#575#3749#0" />
+                <element signature="e#1103#1111#0" />
+                <element signature="e#1504#1977#0" />
+                <element signature="e#1991#2452#0" />
+                <element signature="e#1196#1592#0" />
+                <element signature="e#2931#3377#0" />
+                <element signature="e#2310#2644#0" />
+                <element signature="e#3818#4416#0" />
+                <element signature="e#4464#4645#0" />
+                <element signature="e#4687#5128#0" />
+                <element signature="e#5323#5336#0" />
+                <element signature="e#5302#5814#0" />
+                <element signature="e#5843#6255#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/mpl_toolkits/mplot3d/axes3d.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="1496" column="8" selection-start-line="1496" selection-start-column="8" selection-end-line="1496" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -66,6 +86,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>3d</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -316,7 +341,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57784000" />
+    <option name="totallyTimeSpent" value="72857000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -329,14 +354,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15683647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.4674221" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -362,14 +386,14 @@
     <SUITE FILE_PATH="coverage/pythonLearn$GUI.coverage" NAME="GUI Coverage Results" MODIFIED="1561099061641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trasnportCOSY/transportAuto" />
     <SUITE FILE_PATH="coverage/pythonLearn$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1561339377606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trasnportCOSY" />
     <SUITE FILE_PATH="coverage/pythonLearn$Invoke.coverage" NAME="Invoke Coverage Results" MODIFIED="1560914085071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906" />
-    <SUITE FILE_PATH="coverage/pythonLearn$CCT.coverage" NAME="CCT Coverage Results" MODIFIED="1561902791605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WorkStation" />
+    <SUITE FILE_PATH="coverage/pythonLearn$CCT.coverage" NAME="CCT Coverage Results" MODIFIED="1561986889878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WorkStation" />
     <SUITE FILE_PATH="coverage/pythonLearn$Var0618.coverage" NAME="Var0618 Coverage Results" MODIFIED="1560820797669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906" />
     <SUITE FILE_PATH="coverage/pythonLearn$windowGui.coverage" NAME="windowGui Coverage Results" MODIFIED="1561467641868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trasnportCOSY/transportAuto" />
     <SUITE FILE_PATH="coverage/pythonLearn$file0618.coverage" NAME="file0618 Coverage Results" MODIFIED="1560824824043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906" />
     <SUITE FILE_PATH="coverage/pythonLearn$window.coverage" NAME="window Coverage Results" MODIFIED="1561104164158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906/GUI" />
     <SUITE FILE_PATH="coverage/pythonLearn$OO0619.coverage" NAME="OO0619 Coverage Results" MODIFIED="1560911165560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906" />
     <SUITE FILE_PATH="coverage/pythonLearn$text.coverage" NAME="text Coverage Results" MODIFIED="1561096121472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906/GUI" />
-    <SUITE FILE_PATH="coverage/pythonLearn$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1561901116103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WorkStation" />
+    <SUITE FILE_PATH="coverage/pythonLearn$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1561986257004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WorkStation" />
     <SUITE FILE_PATH="coverage/pythonLearn$pi0618.coverage" NAME="pi0618 Coverage Results" MODIFIED="1560863028884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906" />
     <SUITE FILE_PATH="coverage/pythonLearn$plot.coverage" NAME="plot Coverage Results" MODIFIED="1560915072588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/201906" />
     <SUITE FILE_PATH="coverage/pythonLearn$Time.coverage" NAME="Time Coverage Results" MODIFIED="1560917470219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WorkStation" />
@@ -390,20 +414,6 @@
     <SUITE FILE_PATH="coverage/pythonLearn$transport.coverage" NAME="transport Coverage Results" MODIFIED="1561096823500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trasnportCOSY/transportAuto" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/201901/hello.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/201902/pi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/201902/time.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -701,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/matplotlib/figure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-892">
-          <caret line="1888" column="8" selection-start-line="1888" selection-start-column="8" selection-end-line="1888" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/201906/basic/Science0619.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -722,29 +725,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WorkStation/Test.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/matplotlib/axes/_axes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" selection-start-line="6" selection-end-line="14" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-5864">
+          <caret line="1433" column="8" selection-start-line="1433" selection-start-column="8" selection-end-line="1433" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/mpl_toolkits/mplot3d/axes3d.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="1496" column="8" selection-start-line="1496" selection-start-column="8" selection-end-line="1496" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/matplotlib/figure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="2083" column="34" lean-forward="true" selection-start-line="2083" selection-start-column="34" selection-end-line="2083" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WorkStation/Test2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WorkStation/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WorkStation/CCT.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        <state relative-caret-position="306">
+          <caret line="318" column="37" selection-start-line="318" selection-start-column="37" selection-end-line="318" selection-end-column="37" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#575#3749#0" />
+            <element signature="e#1103#1111#0" />
+            <element signature="e#1504#1977#0" />
+            <element signature="e#1991#2452#0" />
+            <element signature="e#1196#1592#0" />
+            <element signature="e#2931#3377#0" />
+            <element signature="e#2310#2644#0" />
+            <element signature="e#3818#4416#0" />
+            <element signature="e#4464#4645#0" />
+            <element signature="e#4687#5128#0" />
+            <element signature="e#5323#5336#0" />
+            <element signature="e#5302#5814#0" />
+            <element signature="e#5843#6255#0" />
           </folding>
         </state>
       </provider>
