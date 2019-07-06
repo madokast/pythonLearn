@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib as mpl
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
+import WorkStation.Tools as tool
 
 """
     没有弄抽象类，很让人难受
@@ -148,12 +149,21 @@ class Solenoid:
         :return: p 点磁场 np.array() 量
         """
         B = np.array([0, 0, 0])
-        end = self.n * 2.0 * np.pi - self.stepTheta
+        end = self.n * 2.0 * np.pi
         num = int(end / self.stepTheta)
-        for th in np.linspace(0, end, num):
-            p0 = self.point(th)
-            p1 = self.point(th + self.stepTheta)
+
+        p0 = self.point(0.0)
+        p1 = None
+        for i in range(num):
+            p1 = self.point((i + 1) * self.stepTheta)
             B = B + deltaB(p0, p1, self.I, p)
+            p0 = p1
+
+
+        # for th in np.linspace(0, end, num):
+        #     p0 = self.point(th)
+        #     p1 = self.point(th + self.stepTheta)
+        #     B = B + deltaB(p0, p1, self.I, p)
 
         return B
 
@@ -188,7 +198,7 @@ class Solenoid:
         I = 1.0
         step = np.pi / 180.0
         print("线圈半径{}m，匝间距{}m，匝数{}，电流{}A，计算步长{}弧度".format(r, w, n, I, step))
-        print("对应的无限长螺线管的理论磁场Bz = {: e}".format(-(10.0 ** -7) * 100 * 4 * np.pi))
+        print("对应的无限长re螺线管的理论磁场Bz = {: e}".format(-(10.0 ** -7) * 100 * 4 * np.pi))
         return Solenoid(r, w, n, I, step)
 
 
@@ -277,8 +287,9 @@ class CCT:
         """
         B = np.array([0, 0, 0])
         end = self.n * 2.0 * np.pi - self.stepTheta
-        num = int(end / self.stepTheta)
+        num = int(end / self.stepTheta)+1
         # 这里的for循环 要想办法矩阵化
+
         for th in np.linspace(0, end, num):
             p0 = self.point(th)
             p1 = self.point(th + self.stepTheta)
@@ -391,30 +402,49 @@ class CCCT:
         """
         B = np.array([0, 0, 0])
         end = self.n * 2.0 * np.pi - self.stepKsi
-        num = int(end / self.stepKsi)
+        num = int(np.round(end / self.stepKsi)) + 1
         # 这里的for循环 要想办法矩阵化
-        for ksi in np.linspace(0, end, num):
-            p0 = self.point(ksi)
-            p1 = self.point(ksi + self.stepKsi)
+
+        for th in np.linspace(0, end, num):
+            p0 = self.point(th)
+            p1 = self.point(th + self.stepKsi)
             B = B + deltaB(p0, p1, self.I, p)
 
         return B
 
 
 # 以下为测试代码
+# step = 180
+# cct = CCT(25e-3, 6.96e-3, 75, 10000.0, np.pi / 9.0, 1, np.pi / step)
+# print(cct.point(20))
+# print(cct.magnet(np.array([0, 0, 0])))
+# print(cct.point(1.0))
+# print(cct.point(2.0))
+
+# solenoid = Solenoid.demoInstance()
+# tool.Timer.invoke()
+# print(solenoid.magnet(np.array([0, 0, 0])))
+# print(solenoid.magnet(np.array([0, 0, 0.1])))
+# print(solenoid.magnet(np.array([0, 0, 0.2])))
+# print(solenoid.magnet(np.array([0, 0, 0.3])))
+# print(solenoid.magnet(np.array([0, 0, 0.4])))
+# tool.Timer.invoke()
+
+# 弯曲CCT
 # (self,       a, eta, phi0, n,   I,    tiltAngle, nth,stepKsi)
 ccct = CCCT(1, 3, 5e-2, 30, 100, np.pi / 6.0, 2, np.pi / 180.0)
-axis = 0.5
-ax = plot([ccct], [-axis, axis, -axis, axis, -axis, axis])
-r = 0.099821
-R = 1.00497
-th = np.linspace(0, 2, 100)
-x = R * np.cos(th)
-y = R * np.sin(th)
-z = [0.0] * th.__len__()
-print(x)
-ax.plot(x, y, z, 'r')
-plt.show()
+# axis = 0.5
+# ax = plot([ccct], [-axis, axis, -axis, axis, -axis, axis])
+# r = 0.099821
+# R = 1.00497
+# th = np.linspace(0, 2, 100)
+# x = R * np.cos(th)
+# y = R * np.sin(th)
+# z = [0.0] * th.__len__()
+# print(x)
+# ax.plot(x, y, z, 'r')
+# plt.show()
+print(ccct.magnet(np.array([1, 1, 1])))
 
 # cct = CCT(25e-3, 6.96e-3, 75, 1.0, np.pi / 9.0, 1, np.pi / 180.0)
 # cct1 = CCT(25e-3, 6.96e-3, 75, 1.0, -np.pi / 9.0, 1, np.pi / 180.0)
@@ -467,6 +497,7 @@ plt.show()
 
 
 # 2019年7月1日 二极场CCT测试通过了!!
+# tool.Timer.invoke()
 # for step in [30, 90, 120, 150, 180, 240, 360, 3600]:
 #     cct = CCT(25e-3, 6.96e-3, 75, 10000.0, np.pi / 9.0, 1, np.pi / step)
 #     cct.printTheoreticalValues()
@@ -479,7 +510,7 @@ plt.show()
 #         print(str(cct.magnet(np.array([0, 0, i]))))
 #     plt.plot(nz, nBy)
 # plt.show()
-
+# tool.Timer.invoke()
 
 # 2019年6月30日 螺线管测试通过
 # s = Solenoid(0.1, 0.2, 1.0, np.pi / 180.0)
